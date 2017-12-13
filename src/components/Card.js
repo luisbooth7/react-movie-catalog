@@ -40,7 +40,7 @@ class Card extends Component {
     .catch(() => this.setState({ cardState: 'error' }))
   }
 
-	render() {
+  render() {
     const { titleId } = this.props;
     const { title, rating, poster, cardState } = this.state;
     return (
@@ -59,7 +59,7 @@ class Card extends Component {
         </div>
       </div>
     );
-	}
+  }
 }
 
 export default Card;
