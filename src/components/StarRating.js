@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
 class StarRating extends Component {
-	constructor(props) {
-		super(props);
-    this.updateRating = this.updateRating.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.state = {
-      rating: this.props.rating,
-      stars: []
-    };
-	}
+  constructor(props) {
+  super(props);
+  this.updateRating = this.updateRating.bind(this);
+  this.handleChange = this.handleChange.bind(this);
+  this.state = {
+    rating: this.props.rating,
+    stars: []
+  };
+}
 
   componentWillMount() {
     this.updateRating(this.props.rating);
@@ -38,11 +38,11 @@ class StarRating extends Component {
     this.setState({ stars });
   }
 
-	render() {
+  render() {
     const { stars } = this.state;
 
-		return (
-			<div className="rating">
+    return (
+      <div className="rating">
       {stars.map((item, index) => {
         const isChecked = item === 1 ? 'checked' : '';
 
@@ -55,8 +55,8 @@ class StarRating extends Component {
         )})
       }
       </div>
-		);
-	}
+    );
+  }
 }
 
 export default StarRating;

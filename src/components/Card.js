@@ -43,7 +43,7 @@ class Card extends Component {
 	render() {
     const { titleId } = this.props;
     const { title, rating, poster, cardState } = this.state;
-		return (
+    return (
       <div className="card">
         <div className="content">
         {
@@ -57,8 +57,8 @@ class Card extends Component {
           }[cardState]
         }
         </div>
-			</div>
-		);
+      </div>
+    );
 	}
 }
 
