@@ -1,0 +1,24 @@
+.card {
+    height: 400px;
+    width: 200px;
+    margin: 20px 5px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+}
+
+.movie-title {
+	color: #5a5a5a;
+}
+
+.rating {
+    padding: 5px 0 20px 0;
+}
+
+.fa-star {
+	cursor: pointer;
+	font-size: 20px;
+}
+.checked {
+    color: #18aaf5;
+}
